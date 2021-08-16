@@ -1,6 +1,6 @@
-import DressingRoom from "../../Component/DressingRoom";
+import DressingRoomReducer from "./DressingRoomReducer";
 import { combineReducers } from "redux";
 
 export const rootReducer = combineReducers({
-  DressingRoom,
+  DressingRoomReducer,
 });

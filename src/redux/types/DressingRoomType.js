@@ -1,0 +1,1 @@
+export const CHANGE_OUTFIT = "CHANGE_OUTFIT";

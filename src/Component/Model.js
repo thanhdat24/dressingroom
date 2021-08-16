@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function Model() {
+  const { outfit } = useSelector((state) => state.DressingRoomReducer);
   return (
     <div className="contain">
       <div className="body" />
@@ -10,7 +12,7 @@ export default function Model() {
         style={{
           width: 1000,
           height: 1000,
-          background: 'url("../assets/hairstyle/hairstyle3.png")',
+          background: `url(${outfit.hairstyle})`,
           position: "absolute",
           top: "-75%",
           right: "-57%",
@@ -23,7 +25,7 @@ export default function Model() {
         style={{
           width: 500,
           height: 1000,
-          background: 'url("../assets/necklaces/necklace3.png")',
+          background: ` url(${outfit.necklaces})`,
           position: "absolute",
           bottom: "-40%",
           right: "-3.5%",
@@ -36,7 +38,7 @@ export default function Model() {
         style={{
           width: 500,
           height: 500,
-          background: 'url("../assets/clothes/topcloth5.png")',
+          background: ` url(${outfit.topclothes})`,
           position: "absolute",
           top: "-9%",
           left: "-5%",
@@ -49,7 +51,7 @@ export default function Model() {
         style={{
           width: 500,
           height: 1000,
-          background: 'url("../assets/clothes/botcloth4.png")',
+          background: ` url(${outfit.botclothes})`,
           position: "absolute",
           top: "-30%",
           left: "-5%",
@@ -62,7 +64,7 @@ export default function Model() {
         style={{
           width: 500,
           height: 1000,
-          background: 'url("../assets/handbags/handbag2.png")',
+          background: ` url(${outfit.handbags})`,
           position: "absolute",
           bottom: "-40%",
           right: "-3.5%",
@@ -75,7 +77,7 @@ export default function Model() {
         style={{
           width: 500,
           height: 1000,
-          background: 'url("../assets/shoes/shoes2.png")',
+          background: ` url(${outfit.shoes})`,
           position: "absolute",
           bottom: "-37%",
           right: "-3.5%",
@@ -86,7 +88,7 @@ export default function Model() {
       <div
         className="background"
         style={{
-          backgroundImage: 'url("../assets/background/background1.jpg")',
+          backgroundImage: ` url(${outfit.background})`,
         }}
       />
     </div>
